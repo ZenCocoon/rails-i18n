@@ -3,7 +3,19 @@ Rails Locale Data Repository
 
 Central point to collect locale data for use in Ruby on Rails.
 
-## Usage
+## Gem installation
+
+Add to your Gemfile:
+
+    gem 'rails-i18n'
+
+or run this command:
+
+    gem install rails-i18n
+
+Note that your rails version must be 3.0 or higher if you want to install `rails-i18n` as a gem. For rails 2.x, install it manually as described below.
+
+## Manual installation
 
 Download the locale files that are found in the directory [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) and put them into the `config/locales` directory of your Rails application.
 
@@ -11,15 +23,25 @@ If any translation doesn't suit well to the requirements of your application, ed
 
 For more information, visit [Rails Internationalization (I18n) API](http://guides.rubyonrails.org/i18n.html) on the _RailsGuides._
 
+## Available Locales
+
 Available locales are:
-> ar, bg, bn-IN, bs, ca, cy, cz, da, de, de-AT, de-CH, dsb, el, en-AU, en-GB, en-US, eo, es,
-> es-AR, es-CO, es-MX, es-PE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
-> gsw-CH, he, hi-IN, hr, hsb, hu, id, is, it, ja, ko, lo, lt, lv, mk, mn, nb,
+
+> ar, bg, bn-IN, bs, ca, cs, cy, da, de, de-AT, de-CH, dsb, el, en-AU, en-GB, en-US, eo, es,
+> es-AR, es-CL, es-CO, es-MX, es-PE, et, eu, fa, fi, fr, fr-CA, fr-CH, fur, gl-ES,
+> gsw-CH, he, hi-IN, hr, hsb, hu, id, is, it, ja, kn, ko, lo, lt, lv, mk, mn, nb,
 > nl, nn, pl, pt-BR, pt-PT, rm, ro, ru, sk, sl, sr, sr-Latn, sv-SE, sw, th,
 > tr, uk, vi, zh-CN, zh-TW
 
 Note that all locale files are not yet ready for Rails 3. Currently, following locales are ready for Rails 2 and 3:
-> cy, da, de, en-AU, en-US, eo, es-AR, es-CO, es-MX, et, fr, fr-CA, fr-CH, gsw-CH, hi, hi-IN, it, ja, ko, lv, nl, pl, pt-BR, pt-PT, sk, sv-SE, sw, th, zh-CN, zh-TW
+
+> ar, bg, ca, cs, cy, da, de, en-AU, en-GB, en-US, eo, es, es-AR, es-CL, es-CO, es-MX, et,
+> eu, fa, fi, fr, fr-CA, fr-CH, gsw-CH, he, hi, hi-IN, hu, is, it, ja, kn, ko, lv, nb,
+> nl, pl, pt-BR, pt-PT, ro, ru, sk, sv-SE, sw, th, uk, zh-CN, zh-TW
+
+Not-yet-ready locales are:
+
+> bn-IN, bs, de-AT, de-CH, dsb, el, es-PE, fur, gl-ES, hr, hsb, id, lo, lt, mk, mn, nn, rm, sl, sr, sr-Latn, tr, vi
 
 We always welcome your contributions!
 
@@ -32,7 +54,7 @@ If you are familiar with GitHub operations, follow the procedures described in t
 If you are not,
 
 * Save your locale data on the [Gist](http://gist.github.com).
-* Open an issue with reference to the the Gist you created.
+* Open an issue with reference to the Gist you created.
 
 ### Fetch the `rails-18n` repository
 
@@ -88,3 +110,14 @@ If you are ready, push the repository into the Github and send us a pull request
 
 We will do the formality check and publish it as quick as we can.
 
+## License
+
+[MIT](https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt)
+
+## Contributors
+
+See [https://github.com/svenfuchs/rails-i18n/contributors](https://github.com/svenfuchs/rails-i18n/contributors)
+
+## Special thanks
+
+[Tsutomu Kuroda](https://github.com/kuroda) for untiringly taking care of this repository, issues and pull requests

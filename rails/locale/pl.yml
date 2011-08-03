@@ -1,6 +1,7 @@
 # Polish translations for Ruby on Rails
 # by Jacek Becela (jacek.becela@gmail.com, http://github.com/ncr)
 # Minor changes and adjustments for Rails 3 by Piotrek Okoński (http://github.com/pokonski)
+# Minor changes and adjustments by Paweł Chojnacki (https://github.com/chojnacki)
 
 pl:
   date:
@@ -9,11 +10,51 @@ pl:
       short: "%d %b"
       long: "%B %d, %Y"
 
-    day_names: [niedziela, poniedziałek, wtorek, środa, czwartek, piątek, sobota]
-    abbr_day_names: [nie, pon, wto, śro, czw, pia, sob]
+    day_names:
+      - niedziela
+      - poniedziałek
+      - wtorek
+      - środa
+      - czwartek
+      - piątek
+      - sobota
+    abbr_day_names:
+      - nie
+      - pon
+      - wto
+      - śro
+      - czw
+      - pia
+      - sob
 
-    month_names: [~, styczeń, luty, marzec, kwiecień, maj, czerwiec, lipiec, sierpień, wrzesień, październik, listopad, grudzień]
-    abbr_month_names: [~, sty, lut, mar, kwi, maj, cze, lip, sie, wrz, paź, lis, gru]
+    month_names:
+      - ~
+      - styczeń
+      - luty
+      - marzec
+      - kwiecień
+      - maj
+      - czerwiec
+      - lipiec
+      - sierpień
+      - wrzesień
+      - październik
+      - listopad
+      - grudzień
+    abbr_month_names:
+      - ~
+      - sty
+      - lut
+      - mar
+      - kwi
+      - maj
+      - cze
+      - lip
+      - sie
+      - wrz
+      - paź
+      - lis
+      - gru
     order:
       - :day
       - :month
@@ -85,8 +126,8 @@ pl:
           thousand: Tysiąc
           million: Milion
           billion: Miliard
-          trillion: Trylion
-          quadrillion: Kwadrylion
+          trillion: Bilion
+          quadrillion: Biliard
 
   datetime:
     distance_in_words:
@@ -190,4 +231,4 @@ pl:
         <<: *errors_messages
 
       full_messages:
-        format: "%{attribute}%{message}"
+        format: "%{attribute} %{message}"
